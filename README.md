@@ -61,11 +61,16 @@ git clone https://github.com/halil-95/component.git
 
 
 *   **variable for git** 
+    *   all  ` all export `
+        *   export Нужен для того чтобы мы добавили c помощи  этого знака $ в переменный
+    ```git
+        export mess="some message for commit "
+        export teg=" -a 'v.1' -m '$mess'"
+    ```
+внутри **alias** мы будем полбзоватся **export** 
 
     ```git
     alias gs="git status"
-    export mess="some message for commit "
-    export teg=" -a 'v.1' -m '$mess'"
     alias gadd="git add .;git status; git commit -m '$mess'; git tag -a '$teg';git push origin main;git push origin1 main; git status "
     alias gpush1="git push origin alter-main;git push origin1 alter-main; git status"
     alias gls="git log --stat"
