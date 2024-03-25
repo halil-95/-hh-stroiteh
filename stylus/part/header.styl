@@ -1,0 +1,106 @@
+//--------------------------------
+{selector('.a >.b >.c,.d')}
+    color red
+.a
+  .b
+    .c,
+    .d
+      color: red
+//--------------------------------
+.a
+  .b
+    &__c
+      content: selectors()
+//--------------------------------
+var(n)
+  margin (- n)
+
+body
+    var(5px)
+//--------------------------------
+// filter 
+    // unquote('progid:DXImageTransform.Microsoft.BasicImage(rotation=1)')
+//--------------------------------
+.test
+    width: 25px
+    height: 50px
+    margin-left:(@width )
+    margin-right:(@height)
+//--------------------------------
+position()
+  position: arguments
+  z-index: 1 unless @z-index
+
+#logo
+  z-index: 20
+  position: absolute
+
+#logo2
+  position: absolute
+//--------------------------------
+display()
+    display:flex
+    flex-direction: column
+    flex-grow: 2
+
+.test2
+    display flex
+//--------------------------------
+
+var(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  {prop} args
+
+border-radius()
+  var('border-radius', arguments)
+
+box-shadow()
+  var('box-shadow', arguments)
+
+button
+  border-radius 1px 2px / 3px 4px
+
+div 
+    box-shadow: 2px
+
+//--------------------------------
+varsa = 15px
+
+light-blue = red
+
+name="blue"
+
+
+.v
+    color lookup( "light-"+ name )
+/*
+Анимации:
+
+@keyframes: @-webkit-keyframes
+Трансформации:
+
+
+::placeholder: ::-webkit-input-placeholder
+Заполнение контейнеров:
+
+
+Авто-префиксеры:
+ -moz-property: value;
+
+Вспомогательные инструменты автоматического добавления префиксов могут также добавлять -webkit- в начало стилей, когда это необходимо.
+*/
+
+
+// ::placeholder()
+//     ::-webkit-input-placeholder()
+//     ::placeholder()
+
+
+
+
+
+// di
+// display: flex и связанные свойства: -webkit-display, -webkit-flex, -webkit-flex-direction, -webkit-flex-wrap, -webkit-align-items, -webkit-justify-content и т.д.
+// ::placeholder()
+//     var-some("placeholder",arguments)
