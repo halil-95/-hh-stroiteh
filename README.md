@@ -64,5 +64,14 @@ git clone https://github.com/halil-95/component.git
 
     ```git
     alias gs="git status"
-   
+    
+    export mess=""
+    export teg="v.1"
+    alias gadd="git add .;git status; git commit -m '$mess'; git tag -a  "
+    alias gpush="git push origin main;git push origin1 main; git status"
+    alias gpush1="git push origin alter-main;git push origin1 alter-main; git status"
+    alias gls="git log --stat"
+    alias gl="git log"
+    alias gc="git checkout -B main"
+    alias gc1="git checkout -B alter-main"
     ```
