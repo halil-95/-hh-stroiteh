@@ -73,10 +73,11 @@ git clone https://github.com/halil-95/component.git
     alias gs="git status"
     alias gadd="git add .;git status; git commit -m '$mess'";
     alias gpush="git push origin main;git push origin1 main; git status"
-    alias gpush1="git push origin alter-main;
-     push origin1 alter-main; git status"
-    alias gls="git log --stat"
+    alias gpush1="git push origin alter-main; push origin1 alter-main; git status"
+    alias gls="git log --pretty=oneline"
     alias gl="git log"
     alias gc="git checkout -B main"
     alias gc1="git checkout -B alter-main"
+    alias gb="git branch"
+    alias gr="git remote -v"
     ```
