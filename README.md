@@ -69,4 +69,6 @@ git clone https://github.com/halil-95/component.git
     alias gpush1="git push origin alter-main;git push origin1 alter-main; git status"
     alias gls="git log --stat"
     alias gl="git log"
+    alias gc="git checkout -B main"
+    alias gc1="git checkout -B alter-main"
     ```
