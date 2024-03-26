@@ -71,7 +71,7 @@ git clone https://github.com/halil-95/component.git
 
     ```git
     alias gs="git status"
-    alias gadd="git add .;git status; git commit -m '$mess'";
+    alias gadd="git add .;git status; git commit -m '$mess' ";
     alias gpush="git push origin main;git push origin1 main; git status"
     alias gpush1="git push origin alter-main; push origin1 alter-main; git status"
     alias gpull="git pull origin main;git pull origin1 main; git status"
