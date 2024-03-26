@@ -1,3 +1,4 @@
+/*
 .header__text
     text-align: center
 .header__block
@@ -23,8 +24,6 @@
         opacity: .8
         z-index: -1
 
-div
-    border 1px solid #000
 
     h4 
         line-height: 0
@@ -72,6 +71,29 @@ div
         text-align: left
         flex-grow 2
         flex-basis: 50%
+
+*/
+// div,ul,li
+    // border 1px solid white
+
+.header__menu
+    background: $blue
+    color $white
+    padding: 5px 0
+    
+.menu__list
+    justify-content: space-around
+    gap 10px
+
+.menu__list__item
+    flex-grow: 1
+    flex-basis: auto
+    border-right:dotted $brown 1px
+    text-align: center
+    transition: color .5s
+    
+    &:hover
+        color $brown
 
 .my-icon
     font-size: 1.2em
