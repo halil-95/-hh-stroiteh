@@ -7,9 +7,6 @@ var-some(prop, args)
   -webkit-{prop} args
   {prop} args
 
-position()
-    position sticky
-    -webkit-sticky: sticky
 
 content()
     var-some(content, arguments)
@@ -61,3 +58,11 @@ justify-content()
     
 border-radius()
     var-all('border-radius', arguments)
+
+flex1 = {
+    display:flex,
+    justify-content:center,
+    align-items: stretch
+    flex-grow: 1,
+    flex-shrink: 1
+}

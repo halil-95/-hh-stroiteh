@@ -1,85 +1,80 @@
-* 
-    box-sizing: border-box
-    
-:root
-    --white:white;
-    --blue:#012c6d;
-    --brown:#fcb900;
-    --black:black;
-    --h2:2em;
-    --h3:1.625em;
-    --h4:1.1875em;
-    --span:0.9375em;
-    --a:0.8125em;
-    --p:1em;
-    --size_container:1120px;
+.header__text
+    text-align: center
+.header__block
+    border 1px solid #000
+    text-align: center
+    position relative
+    p   
+        color:$white
 
-{selector("h2, h3, h4")}
+    &:after
+        content:''
+        width: 100%
+        height: 100%
+        position absolute
+        top 0
+        left: 0
+        background-repeat: no-repeat
+        background-position: bottom 
+        background-attachment: fixed;
+        background-origin: content-box;
+        background-size: 100% 
+        background-image: url('dist/img/slide/ГЛАВНАЯ-ЛИНИЯ-ОБОГАЩЕНИЯ-2-scaled.jpg')
+        opacity: .8
+        z-index: -1
+
+div
+    border 1px solid #000
+
+    h4 
+        line-height: 0
+
+.header__img
+    flex-basis: 100%
+    border 1px solid #000
+    *
+        flex-basis: (100% / 4)
+        flex-grow: 1
+
+.header__img__logo
+    {flex1}
+    align-items: center
+    font-size: 2em
     font-family: Roboto
-    font-weight: 600
-    font-size-adjust: 100%
-    color: var(--blue)
+    font-weight: bold
+    color $brown
 
-var-all(prop, args)
-  -webkit-{prop} args
-  -moz-{prop} args
-  {prop} args
 
-var-some(prop, args)
-  -webkit-{prop} args
-  {prop} args
+.header__img__phone__block
+    {flex1}
+    span 
+        font-size: 2em
+        flex-grow 1
+        margin: auto
+        text-align: right
+        color: $brown
+    h3
+        text-align: left
+        flex-grow 2
+        flex-basis: 50%
 
-position()
-    position sticky
-    -webkit-sticky: sticky
+.header__img__mail
+    gap 25px
 
-content()
-    var-some(content, arguments)
+.mail__block
+    {flex1}
+   
+    span 
+        flex-grow 1
+        margin: auto
+        text-align: center
+    p
+        text-align: left
+        flex-grow 2
+        flex-basis: 50%
 
-transform()
-    var-some("transform", arguments)
+.my-icon
+    font-size: 1.2em
+    vertical-align: middle
+    font-weight: bold
 
-transform-origin()
-    var-some("transform-origin", arguments)
-
-transition()
-    var-some("transition", arguments)
-
-radial-gradient()
-    var-some("radial-gradient", arguments)
-
-linear-gradient()
-    var-some("linear-gradient", arguments)
-
-filter()
-    var-some("filter", arguments)
-
-text-fill-color()
-    var-some("text-fill-color", arguments)
-
-background-clip()
-    var-some("background-clip", arguments)
-
-text-stroke()
-    var-some("text-stroke", arguments)
-
-opacity()
-    var-some("opacity", arguments)
-
-display()
-    var-some("display", arguments)
-
-flex-direction()
-    var-some("flex-direction", arguments)
-
-flex-wrap()
-    var-some("flex-wrap",arguments)
-
-align-items()
-    var-some("align-items",arguments)
-
-justify-content()
-    var-some("justify-content",arguments)
-    
-border-radius()
-    var-all('border-radius', arguments)

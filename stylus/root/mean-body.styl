@@ -1,20 +1,27 @@
-{selector("h2, h3, h4")}
+{selector("h1, h2, h3, h4, a, span, p,")}
     font-family: Roboto
-    font-weight: 600
     font-size-adjust: 100%
+
+{selector("h1, h2, h3, h4")}
+    font-weight: 600
     color: var(--blue)
+h1
+    font-size: $h4
 
 h2
     font-size 2em
     line-height 32px
+    font-size $h2
     
 h3
-    font-size 1.0625em
+    font-size $h3
     line-height 20.4px
+    color:$brown
 
 h4
-    font-size 1.1875em
+    font-size $h4
     line-height 19px
+    color $blue
 
 ul 
     margin unset;
@@ -23,4 +30,31 @@ ul
         list-style none
 a 
     text-decoration none
-    margin unset
+    color inherit
+    font-size: $a
+
+p   
+    font-size: $p
+
+.button
+    color $white
+    background: $brown
+    font-family: Roboto 
+    padding: 10px 15px
+    font-weight: bold
+    font-size: $span
+    span 
+        font-size: 1.1em
+
+
+.container
+    width: $size_container
+    border 1px solid #000
+    margin: 5px auto
+
+.flex
+.flex_column   
+    {flex1}
+
+.flex_column
+    flex-direction: column
