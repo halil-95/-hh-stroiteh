@@ -115,29 +115,38 @@ p {
 .button span {
   font-size: 2.1em;
 }
-.header__menu {
-  background: var(--blue);
-  color: var(--white);
-  padding: 5px 0;
+img {
+  max-width: 100%;
 }
-.menu__list {
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  gap: 10px;
+div {
+  border: 1px solid #000;
 }
-.menu__list__item {
+.hero__block {
+  color: #f00;
+}
+.hero__block * {
+  flex-basis: 50%;
+}
+.hero__left,
+.hero__right {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: stretch;
+  align-items: stretch;
   flex-grow: 1;
+  flex-shrink: 1;
+}
+.hero__left {
   flex-basis: auto;
-  border-right: dotted var(--brown) 1px;
-  text-align: center;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  flex-grow: 1;
+  border: 1px solid #f00;
 }
-.menu__list__item:hover {
-  color: var(--brown);
+.hero__right {
+  border: 1px solid #000;
 }
-.my-icon {
-  font-size: 1.2em;
-  vertical-align: middle;
-  font-weight: bold;
+.hero__left__img {
+  border: 1px solid #000;
+  width: 50%;
 }
