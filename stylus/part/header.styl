@@ -1,0 +1,85 @@
+* 
+    box-sizing: border-box
+    
+:root
+    --white:white;
+    --blue:#012c6d;
+    --brown:#fcb900;
+    --black:black;
+    --h2:2em;
+    --h3:1.625em;
+    --h4:1.1875em;
+    --span:0.9375em;
+    --a:0.8125em;
+    --p:1em;
+    --size_container:1120px;
+
+{selector("h2, h3, h4")}
+    font-family: Roboto
+    font-weight: 600
+    font-size-adjust: 100%
+    color: var(--blue)
+
+var-all(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  {prop} args
+
+var-some(prop, args)
+  -webkit-{prop} args
+  {prop} args
+
+position()
+    position sticky
+    -webkit-sticky: sticky
+
+content()
+    var-some(content, arguments)
+
+transform()
+    var-some("transform", arguments)
+
+transform-origin()
+    var-some("transform-origin", arguments)
+
+transition()
+    var-some("transition", arguments)
+
+radial-gradient()
+    var-some("radial-gradient", arguments)
+
+linear-gradient()
+    var-some("linear-gradient", arguments)
+
+filter()
+    var-some("filter", arguments)
+
+text-fill-color()
+    var-some("text-fill-color", arguments)
+
+background-clip()
+    var-some("background-clip", arguments)
+
+text-stroke()
+    var-some("text-stroke", arguments)
+
+opacity()
+    var-some("opacity", arguments)
+
+display()
+    var-some("display", arguments)
+
+flex-direction()
+    var-some("flex-direction", arguments)
+
+flex-wrap()
+    var-some("flex-wrap",arguments)
+
+align-items()
+    var-some("align-items",arguments)
+
+justify-content()
+    var-some("justify-content",arguments)
+    
+border-radius()
+    var-all('border-radius', arguments)
