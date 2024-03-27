@@ -11,9 +11,10 @@
     <!-- <base href="https://stroitehnika1.codertime.site"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link title="helli" rel="icon" href="dist/img/ЛОГО-СТРОЙТЕНИКА-ЧЕРНЫЙ-—-ПЕСОК.png" type="image/x-icon">
-    <link rel="stylesheet" href="dist/fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <link rel="stylesheet" href="dist/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="dist/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="dist/fonts/fontello/css/fontello.css">
     <link rel="stylesheet" href="dist/fonts/romoto/stylesheet.css">
     <link rel="stylesheet" href="dist/css/stylesheets.min.css">
     <link rel="stylesheet" href="style.css">
@@ -22,20 +23,24 @@
 </head>
 
 <body>
-    <!-- <header>
-        <div class="header__text  container">
+     <header>
+        <!-- <div class="header__text  container">
             <h1>Производитель оборудования и производственных линий для различных отраслей
                 промышленности с 1990 г.</h1>
-        </div>
+        </div> -->
         <div class="header__block flex_column">
             <div class="header__img container flex">
                 <div class="header__img__logo">codertime</div>
                 <div class="header__img__address">
-                    <h3>
-                        <span class="icon-map my-icon"></span>
-                        address
-                    </h3>
-                    <p>some text</p>
+                    <div class="top__block block">
+                        <div class="block__left">
+                            <span class="icon-map my-icon"></span>
+                        </div>
+                        <div class="block__right">
+                            <h3>address</h3>
+                        </div>
+                    </div>
+                    <div class="botm__block"><p>some text</p></div>
                 </div>
                 <div class="header__img__phone">
                     <div class="header__img__phone__block">
@@ -48,9 +53,12 @@
                     <p>some text</p>
                 </div>
                 <div class="header__img__mail mail flex_column">
-                    <h3> <span class="icon-mail my-icon"></span>
-                        <a href="mailto:halilaliyew@gmail.com">halilaliyew@gmail.com</a>
-                    </h3>
+                    <div class="mail__block__address mail__block">
+                        <span class="icon-mail my-icon"></span>
+                        <h3> 
+                            <a href="mailto:halilaliyew@gmail.com">halilaliyew@gmail.com</a>
+                        </h3>
+                    </div>
                     <div class="mail__block button">
                         <span class="icon-paper1 my-icon"></span>
                         <p>ЗАПРОСИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</p>
@@ -61,37 +69,53 @@
                     </div>
                 </div>
             </div>
-        <nav class="header__menu menu  ">
-            <ul class="menu__list flex container">
-                <li class="menu__list__item">
-                    <a href="">ГЛАВНАЯ</a>
-                </li>
-                <li class="menu__list__item">
-                    <a href="">О КОМПАНИИ</a>
-                </li>
-                <li class="menu__list__item">
-                    <a href="">КАТАЛОГ ОБОРУДОВАНИЯ</a>
-                </li>
-                <li class="menu__list__item">
-                    <a href="">ИНЖИНИРИНГ И СОПРОВОЖДЕНИЕ</a>
-                </li>
-                <li class="menu__list__item">
-                    <a href="">ОБЪЕКТЫ</a>
-                </li>
-                <li class="menu__list__item">
-                    <a href="">КОНТАКТЫ</a>
-                </li>
-            </ul>
-        </nav>
+            <!-- <nav class="header__menu menu  ">
+                <button class="header__menu__button_hidden icon-text"></button>
+                <ul class="menu__list flex container">
+                    <li class="menu__list__item">
+                        <a href="">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="">О КОМПАНИИ</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="">КАТАЛОГ ОБОРУДОВАНИЯ</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="">ИНЖИНИРИНГ И СОПРОВОЖДЕНИЕ</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="">ОБЪЕКТЫ</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav> -->
         </div>
-    </header> -->
-    <main role="main">
+    </header>
+    <!-- <main role="main">
         <section class="hero">
-            <div class="hero__block flex container">
+            <div class="hero__block flex container ">
                 <div class="hero__left">
-                    <div class="hero__left__img">
-                        <img src="dist/img/slide/ГЛАВНАЯ-Схема.png" alt="som img">
-                    </div>
+                    <section class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="dist/img/ЛОГО-СТРОЙТЕНИКА-ЧЕРНЫЙ-—-ПЕСОК.png"
+                                        alt="">
+                                    <span class="splide__span">hello</span>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="dist/img/ЛОГО-СТРОЙТЕНИКА-ЧЕРНЫЙ-—-ПЕСОК.png" alt="">
+                                    <span class="splide__span">hello</span>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="dist/img/ЛОГО-СТРОЙТЕНИКА-ЧЕРНЫЙ-—-ПЕСОК.png" alt="">
+                                    <span class="splide__span">hello</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
                 <div class="hero__right flex_column">
                     <h2>Инжиниринг и технологии. Технологическое оборудование</h2>
@@ -358,9 +382,23 @@
                 <div class="footer__block__bootoom__rights"></div>
             </div>
         </footer> -->
-    </main>
+    </main> -->
 </body>
 
 <script src="dist/script/script.js"></script>
+<!-- <script src="dist/script/node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script> -->
+<script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            autoplay: 'play',
+        });
+        splide.mount();
+    });
+
+
+</script>
 
 </html>
